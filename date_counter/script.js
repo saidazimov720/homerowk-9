@@ -3,4 +3,8 @@ function Counter(datestring) {
     if (isNaN(datebegin.getTime())) {
         return "invalid date format";
     }
+
+    var datetoday = new Date();
+
+    
 }
