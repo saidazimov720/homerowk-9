@@ -1,4 +1,4 @@
-function Counter(datestring) {
+function counter(datestring) {
     var datebegin = new Date(datestring);
     if (isNaN(datebegin.getTime())) {
         return "invalid date format";
@@ -33,4 +33,10 @@ function Counter(datestring) {
                       (diffhours * 60) + 
                       diffminutes + 
                       (diffseconds / 60);
-}    
+    
+                      return totalcounts;
+}
+
+var datestring = prompt("Enter the date:");
+var diffdate = counter(datestring);
+
