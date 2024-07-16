@@ -17,4 +17,7 @@ function Counter(datestring) {
     var monthtoday = datetoday.getMonth();
     var daystoday = datetoday.getDay();
     var hourstoday = datetoday.getHours();
+    var minutestoday = datetoday.getMinutes();
+    var secondstoday = datetoday.getSeconds();
+    
 }    
