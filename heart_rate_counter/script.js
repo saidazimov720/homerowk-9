@@ -13,9 +13,9 @@ if (inputdate && inputbpm) {
         var totalbeats = bpm * 60 * 24 * diffday;
         alert(`Total heartbeats from: ${datestart.toDateString()} to today: ${totalbeats}`)
     } else {
-        
+        alert("Invalid value");
     }
 
 } else {
-
+    alert("Both start date and BPM are required");
 }
