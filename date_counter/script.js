@@ -13,7 +13,7 @@ function counter(datestring) {
     var starthour = datebegin.getHours();
     var startminutes = datebegin.getMinutes();
     var startseconds = datebegin.getSeconds();
-    
+
     var yeartoday = datetoday.getFullYear();
     var monthtoday = datetoday.getMonth();
     var daystoday = datetoday.getDay();
@@ -38,6 +38,11 @@ function counter(datestring) {
                       return totalcounts;
 }
 
-var datestring = prompt("Enter the date:");
+var datestring = prompt("Enter the date and time:");
 var diffdate = counter(datestring);
 
+if (typeof diffdate === 'string') {
+    console.log(diffdate);
+} else {
+    console.log(`from ${datestring}: `);
+}
