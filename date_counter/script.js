@@ -19,5 +19,13 @@ function Counter(datestring) {
     var hourstoday = datetoday.getHours();
     var minutestoday = datetoday.getMinutes();
     var secondstoday = datetoday.getSeconds();
-    
+
+    var diffyear = yeartoday - startyear;
+    var diffmonths = monthtoday - startmonth;
+    var diffdays = daystoday - startday;
+    var diffhours = hourstoday - starthour;
+    var diffminutes = minutestoday - startminutes;
+    var diffseconds = secondstoday - startseconds;
+
+    var totalcounts = (diffyear*365*24*60)+(diffmonths*30*24*60)+(diffdays*24*60)+(diffhours*60)+diffminutes+(diffseconds/60);
 }    
