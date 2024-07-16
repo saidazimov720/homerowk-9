@@ -6,5 +6,6 @@ function Counter(datestring) {
 
     var datetoday = new Date();
 
-    
+    var datetoday = new Date();
+    var startyear = datebegin.getFullYear();
 }
