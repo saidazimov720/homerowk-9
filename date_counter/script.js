@@ -72,5 +72,11 @@ var diffdate = counter(datestring);
 if (typeof diffdate === 'string') {
     console.log(diffdate);
 } else {
-    console.log(`from ${datestring}: `);
+    console.log(`from ${datestring} is to now:
+        ${diffdate.diffyear} years,
+        ${diffdate.diffmonths} months,
+        ${diffdate.diffdays} days,
+        ${diffdate.diffhours} hours,
+        ${diffdate.diffminutes} minutes,
+        ${diffdate.diffseconds} seconds. `);
 }
