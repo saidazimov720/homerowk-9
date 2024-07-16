@@ -6,7 +6,7 @@ function Counter(datestring) {
 
     var datetoday = new Date();
 
-    
+
     var startyear = datebegin.getFullYear();
     var startmonth = datebegin.getMonth();
     var startday = datebegin.getDay();
@@ -27,5 +27,10 @@ function Counter(datestring) {
     var diffminutes = minutestoday - startminutes;
     var diffseconds = secondstoday - startseconds;
 
-    var totalcounts = (diffyear*365*24*60)+(diffmonths*30*24*60)+(diffdays*24*60)+(diffhours*60)+diffminutes+(diffseconds/60);
+    var totalcounts = (diffyear * 365 * 24 * 60) + 
+                      (diffmonths * 30 * 24 * 60) + 
+                      (diffdays * 24 * 60) + 
+                      (diffhours * 60) + 
+                      diffminutes + 
+                      (diffseconds / 60);
 }    
