@@ -28,21 +28,29 @@ function counter(datestring) {
     var diffminutes = minutestoday - startminutes;
     var diffseconds = secondstoday - startseconds;
 
-   if (diffseconds < 0) {
-    diffseconds +=60;
-    diffminutes--;
-   }
+    if (diffseconds < 0) {
+        diffseconds += 60;
+        diffminutes--;
+    }
 
-   if (diffminutes < 0) {
-    diffminutes +=60;
-    diffhours--;
-   }
+    if (diffminutes < 0) {
+        diffminutes += 60;
+        diffhours--;
+    }
 
-   if (diffhours < 0) {
-    diffhours +=24;
-    diffdays--;
-   }
-  return totalcounts;
+    if (diffhours < 0) {
+        diffhours += 24;
+        diffdays--;
+    }
+
+    if (diffdays < 0) {
+        var previousmonths = datetoday.getMonth() - 1;
+        if (previousmonths < 0) {
+            previousmonths = 11;
+            diffyear--
+        }
+    }
+    return totalcounts;
 }
 
 var datestring = prompt("Enter the date and time:");
