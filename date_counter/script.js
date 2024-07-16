@@ -10,5 +10,6 @@ function Counter(datestring) {
     var startyear = datebegin.getFullYear();
     var startmonth = datebegin.getMonth();
     var startday = datebegin.getDay();
+    var starthour = datebegin.getHours();
     
 }
