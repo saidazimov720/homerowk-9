@@ -62,6 +62,10 @@ function counter(datestring) {
     return { diffyear, diffmonths, diffdays, diffhours, diffminutes, diffseconds };
 }
 
+function monthtoday(diffmonths, diffyear) {
+    return new Date(diffyear, diffmonths + 1.0).getDate();
+}
+
 var datestring = prompt("Enter the date and time:");
 var diffdate = counter(datestring);
 
