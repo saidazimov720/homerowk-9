@@ -28,14 +28,21 @@ function counter(datestring) {
     var diffminutes = minutestoday - startminutes;
     var diffseconds = secondstoday - startseconds;
 
-    var totalcounts = (diffyear * 365 * 24 * 60) + 
-                      (diffmonths * 30 * 24 * 60) + 
-                      (diffdays * 24 * 60) + 
-                      (diffhours * 60) + 
-                      diffminutes + 
-                      (diffseconds / 60);
-    
-                      return totalcounts;
+   if (diffseconds < 0) {
+    diffseconds +=60;
+    diffminutes--;
+   }
+
+   if (diffminutes < 0) {
+    diffminutes +=60;
+    diffhours--;
+   }
+
+   if (diffhours < 0) {
+    diffhours +=24;
+    diffdays--;
+   }
+  return totalcounts;
 }
 
 var datestring = prompt("Enter the date and time:");
