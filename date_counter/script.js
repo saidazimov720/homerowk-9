@@ -49,8 +49,17 @@ function counter(datestring) {
             previousmonths = 11;
             diffyear--
         }
+
+        diffdays += monthtoday(previousmonths, datetoday.getFullYear());
+        diffmonths--;
     }
-    return totalcounts;
+
+    if (diffmonths < 0) {
+        diffmonths += 12;
+        diffyear--;
+    }
+
+    return { diffyear, diffmonths, diffdays, diffhours, diffminutes, diffseconds };
 }
 
 var datestring = prompt("Enter the date and time:");
