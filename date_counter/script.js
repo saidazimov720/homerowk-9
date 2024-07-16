@@ -9,5 +9,6 @@ function Counter(datestring) {
     var datetoday = new Date();
     var startyear = datebegin.getFullYear();
     var startmonth = datebegin.getMonth();
+    var startday = datebegin.getDay();
     
 }
