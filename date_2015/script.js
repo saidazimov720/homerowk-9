@@ -7,3 +7,5 @@ function minutesCounter(datestring) {
 }
 
 var datestring = "2015-07-15";
+var minutes = minutesCounter(datestring);
+console.log(`From 2015-07-15 : ${minutes} minutes.`);
