@@ -13,6 +13,7 @@ function counter(datestring) {
     var starthour = datebegin.getHours();
     var startminutes = datebegin.getMinutes();
     var startseconds = datebegin.getSeconds();
+    
     var yeartoday = datetoday.getFullYear();
     var monthtoday = datetoday.getMonth();
     var daystoday = datetoday.getDay();
